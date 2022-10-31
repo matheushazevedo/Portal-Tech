@@ -10,7 +10,7 @@ def calculater (firstNumber:float, secondNumber:float, operation:str):
     match operation:
         case('sum'):
             result = firstNumber + secondNumber
-        case('subraction'):
+        case('subtraction'):
             result = firstNumber - secondNumber
         case('multiplication'):
             result = firstNumber * secondNumber
@@ -36,7 +36,7 @@ while True:
         break
 while True:
     operation = str(input('Enter the operation that is: ').lower())
-    if operation == 'sum' or operation == 'subraction' or operation == 'multiplication' or operation == 'division':
+    if operation == 'sum' or operation == 'subtraction' or operation == 'multiplication' or operation == 'division':
         break
     else:
         print('Please check and try again.')
