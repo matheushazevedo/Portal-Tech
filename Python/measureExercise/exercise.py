@@ -33,7 +33,10 @@ while True:
         except Exception as erro:
             print(erro)
         else:
-            break
+            if sNumber == 0 and choice == 4:
+                print('\033[0;31mERROR: cannot divide by zero, try again.\033[0;37m')
+                continue
+            else: break
 
     match choice:
         case(1):
@@ -45,4 +48,5 @@ while True:
         case(4):
             result = [cal(fNumber, sNumber, '/'), '/']
     print(f'{fNumber:.2f} {result[1]} {sNumber:.2f} = {result[0]:.2f}')
+    
 print('Program completed successfully.')
