@@ -9,6 +9,8 @@ while True:
             choice = int(input('Enter the number of one of the options above: '))
         except ValueError:
             print('\033[0;31mERROR: is not a valid integer, try again.\033[0;37m')
+        except Exception as erro:
+            print(erro)
         else:
             if choice >= 0 and choice <= 4:
                 break
@@ -48,5 +50,5 @@ while True:
         case(4):
             result = [cal(fNumber, sNumber, '/'), '/']
     print(f'{fNumber:.2f} {result[1]} {sNumber:.2f} = {result[0]:.2f}')
-    
+
 print('Program completed successfully.')

@@ -11,5 +11,5 @@ while True:
     except ValueError:
         print('ERRO: Please enter a valid year and try again.')
     else:
-        print(f'{name[0]}, this year you will be {int(year) - yearOfBirth} years old')
+        print(f'{name[0]}, this year you will be {int(year) - yearOfBirth} years old.')
         break
