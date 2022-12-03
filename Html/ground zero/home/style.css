@@ -17,3 +17,16 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
+header {
+    display: flex;
+    justify-content: space-around;
+    min-height: 10vh;
+}
+
+.nav-top {
+    min-width:45vh;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
